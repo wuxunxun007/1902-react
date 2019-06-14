@@ -2,9 +2,14 @@ import React, { Component } from 'react';
 
 class Com extends Component {
   render () {
+    console.log(this)
     return (
       <ul>
-        <li>肖生克的救赎</li>
+        {
+          this.props.prolist.map(item => {
+            return (<li key = { item.id }> { item.title } </li>)
+          })
+        }
       </ul>
     )
   }
