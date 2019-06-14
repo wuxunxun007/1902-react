@@ -1,0 +1,8 @@
+.DS_Store
+/day01/node_modules/
+/day01/reactapp/node_modules/
+/dist/
+/day02/node_modules/
+/day03/node_modules/
+/day03/day02/node_modules/
+/day04/node_modules/
