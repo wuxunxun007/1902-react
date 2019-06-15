@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter, Route, Switch } from 'react-router-dom';
-import App from './App';
+import App from '@/layout/App';
+import DetailApp from '@/layout/DetailApp';
 import * as serviceWorker from './serviceWorker';
 
 // HashRouter 表示你给根节点root要通过路由去渲染页面
@@ -10,6 +11,7 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <HashRouter>
     <Switch>
+      <Route path = "/detail" component = { DetailApp } />
       <Route path = '/' component = { App }/>
     </Switch>
   </HashRouter>
