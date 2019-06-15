@@ -1,0 +1,27 @@
+@import '@/lib/reset.scss';
+
+html, body, #root, .container {
+  @include rect(100%, 100%);
+}
+.container {
+  @include flexbox();
+  @include flex-direction(column);
+  .box {
+    @include flex();
+    @include rect(100%, auto);
+    @include flexbox();
+    @include flex-direction(column);
+    .header {
+      @include rect(100%, 0.44rem);
+      @include background-color(#f66);
+    }
+    .content {
+      @include flex();
+      @include rect(100%, auto);
+    }
+  }
+  .footer {
+    @include rect(100%, 0.5rem);
+    @include background-color(#efefef);
+  }
+}
