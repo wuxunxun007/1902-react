@@ -23,5 +23,22 @@ html, body, #root, .container {
   .footer {
     @include rect(100%, 0.5rem);
     @include background-color(#efefef);
+    ul {
+      @include rect(100%, 100%);
+      @include flexbox();
+      a {
+        @include flex();
+        @include rect(auto, 100%);
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content();
+        @include align-items();
+        @include text-color(#333);
+
+        &.active {
+          @include text-color(#f66);
+        }
+      }
+    }
   }
 }

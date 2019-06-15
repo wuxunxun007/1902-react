@@ -1,9 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// HashRouter 表示你给根节点root要通过路由去渲染页面
+// HashRouter 只能有一个子元素，所以会用Switch
+// Route 就表示路由的规则
+ReactDOM.render(
+  <HashRouter>
+    <Switch>
+      <Route path = '/' component = { App }/>
+    </Switch>
+  </HashRouter>
+  , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
