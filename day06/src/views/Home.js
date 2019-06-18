@@ -7,7 +7,7 @@ class Com extends React.Component {
     super(props);
     this.state = {
       prolist: [],
-      bannerlist: [],
+      bannerlist: [1, 2],
       tabs: [
         { title: '1st Tab' },
         { title: '2nd Tab' },
@@ -42,11 +42,11 @@ class Com extends React.Component {
       </div>
     )
     // let ta = ''
-    // this.state.activeIndex === 0 ? ta = <Com1 /> : ''
-    // this.state.activeIndex === 1 ? ta = <Com2 /> : ''
-    // this.state.activeIndex === 2 ? ta = <Com3 /> : ''
-    // this.state.activeIndex === 3 ? ta = <Com4 /> : ''
-    // this.state.activeIndex === 4 ? ta = <Com5 /> : ''
+    // this.state.activeIndex === 0 ? ta = <Com1 /> : ta = <div></div>
+    // this.state.activeIndex === 1 ? ta = <Com2 /> : ta = <div></div>
+    // this.state.activeIndex === 2 ? ta = <Com3 /> : ta = <div></div>
+    // this.state.activeIndex === 3 ? ta = <Com4 /> : ta = <div></div>
+    // this.state.activeIndex === 4 ? ta = <Com5 /> : ta = <div></div>
     // return ta
   }
   clicktab (tabs, index) {
@@ -61,11 +61,11 @@ class Com extends React.Component {
       <div className = "box">
         <header className = "header">首页头部</header>
         <div className = "content">
-          <Tabs tabs={ this.state.tabs } onChange = { this.clicktab.bind(this)} onTabClick = { this.clicktab.bind(this)} renderTabBar={function (props) { 
+          {/* <Tabs tabs={ this.state.tabs } onChange = { this.clicktab.bind(this)} onTabClick = { this.clicktab.bind(this)} renderTabBar={function (props) { 
             return <Tabs.DefaultTabBar {...props} page={3} />
           }}>
             {this.renderContent}
-          </Tabs>
+          </Tabs> */}
           <Banner bannerlist = { this.state.bannerlist }/>
           <ProList prolist = { this.state.prolist } { ...this.props }/>
         </div>

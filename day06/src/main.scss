@@ -1,5 +1,5 @@
 @import '@/lib/reset.scss';
-
+* { touch-action: pan-y; } 
 html, body, #root, .container {
   @include rect(100%, 100%);
 }
