@@ -2,14 +2,24 @@ import React, { Component } from 'react';
 
 class Com extends Component {
   componentDidMount () {
-
+    this.props.getBannerListData();
+    this.props.getProListData();
   }
 
   render () {
     return (
       <div>
         首页
-        { this.props.bannerlist }
+        { 
+          this.props.bannerlist.map((item, index) => (
+            <li key = { index }>{ item }</li>
+          ))
+        }
+        { 
+          this.props.prolist.map((item, index) => (
+            <li key = { index }>{ item.title }</li>
+          ))
+        }
       </div>
     )
   }
