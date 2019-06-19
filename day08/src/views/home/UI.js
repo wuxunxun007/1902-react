@@ -9,7 +9,7 @@ class Com extends Component {
   render () {
     return (
       <div>
-        首页
+        首页1
         { 
           this.props.bannerlist.map((item, index) => (
             <li key = { index }>{ item }</li>
