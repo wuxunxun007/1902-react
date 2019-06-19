@@ -7,7 +7,10 @@ class Com extends Component {
 
   render () {
     return (
-      <div>首页</div>
+      <div>
+        首页
+        { this.props.bannerlist }
+      </div>
     )
   }
 }

@@ -5,7 +5,7 @@ function getNewState (state, obj) {
 }
 
 const reducer = (state = {
-  bannerlist: [],
+  bannerlist: [1, 2, 3],
   prolist: []
 }, action) => {
   const { type, data } = action
