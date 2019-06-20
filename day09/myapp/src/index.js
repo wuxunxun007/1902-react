@@ -2,19 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from '@/layout/App';
 import * as serviceWorker from './serviceWorker';
-// import { Provider } from 'react-redux';
 import store from './store';
 import { HashRouter, Route, Switch } from 'react-router-dom';
-import './main.scss';
-
-// ReactDOM.render(
-// <Provider store = { store }>
-//   <HashRouter>
-//     <Switch>
-//       <Route path = "/" component = { App } />
-//     </Switch>
-//   </HashRouter>
-// </Provider>, document.getElementById('root'));
+import './main.scss'
 
 function renderFn () {
   ReactDOM.render(
