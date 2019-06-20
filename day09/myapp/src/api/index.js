@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = '/daxun';
+const baseUrl = 'http://www.daxunxun.com';
 
 export default {
   reqGetData (url) {

@@ -5,6 +5,7 @@ import * as serviceWorker from './serviceWorker';
 import store from './store';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import './main.scss'
+// import './mock/index'
 
 function renderFn () {
   ReactDOM.render(

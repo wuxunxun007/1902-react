@@ -139,6 +139,7 @@
   "devDependencies": {
     "babel-plugin-import": "^1.12.0",
     "http-proxy-middleware": "^0.19.1",
+    "mockjs": "^1.0.1-beta3",
     "node-sass": "^4.12.0"
   }
 }
