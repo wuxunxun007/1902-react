@@ -5,6 +5,6 @@ import '@/api'
 // 给页面中id为root的标签渲染了一个 App 的组件
 // 在react中组件的首字母必须大写，因为如果写的是小写，第一可能与HTML标签冲突
 ReactDOM.render(
-  <App />,
+  <App name="类型校验"/>,
   document.getElementById('root')
 )
