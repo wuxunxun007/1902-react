@@ -133,6 +133,6 @@
   },
   "devDependencies": {
     "babel-plugin-import": "^1.12.0",
-    "node-sass": "^4.12.0"
+    "node-sass": "^7.0.0"
   }
 }
